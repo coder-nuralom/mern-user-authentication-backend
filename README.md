@@ -40,3 +40,57 @@ Password Hashing: bcryptjs
 Email Service: Nodemailer
 
 Security: Crypto (SHA256 for OTP hashing)
+
+
+🔑 Authentication Flow:-
+📝 Register
+
+User registers with name, email, password.
+
+Password is hashed using bcrypt.
+
+JWT verification token generated (10 min expiry).
+
+Verification email sent to user.
+
+📧 Verify Email
+
+User verifies email using JWT token.
+
+Account is marked as verified.
+
+🔓 Login
+
+Checks email & password.
+
+Only verified users can login.
+
+Generates:
+
+Access Token (10 days)
+
+Refresh Token (30 days)
+
+Session stored in database.
+
+🔁 Forgot Password
+
+Generates 6-digit OTP.
+
+OTP hashed using SHA256.
+
+OTP expires in 2 minutes.
+
+OTP sent via email.
+
+🔍 Verify OTP
+
+Validates OTP.
+
+Clears stored OTP after successful verification.
+
+🔐 Change Password
+
+Hashes new password.
+
+Updates securely in database.

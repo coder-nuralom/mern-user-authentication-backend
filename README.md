@@ -2,7 +2,6 @@
 A complete authentication and authorization system built with Node.js, Express, MongoDB, and JWT.
 This project includes email verification, OTP-based password reset, session management, and secure authentication using hashed passwords.
 
-
 🚀 Features:-
 ✅ User Registration
 
@@ -26,8 +25,6 @@ This project includes email verification, OTP-based password reset, session mana
 
 ✅ Secure Token Handling using JWT
 
-
-
 🛠️ Tech Stack:-
 Backend: Node.js, Express.js
 
@@ -40,7 +37,6 @@ Password Hashing: bcryptjs
 Email Service: Nodemailer
 
 Security: Crypto (SHA256 for OTP hashing)
-
 
 🔑 Authentication Flow:-
 📝 Register
